@@ -1,0 +1,21 @@
+{
+  "name": "styled-component-hamburgerjs",
+  "version": "1.0.0",
+  "description": "simple hamburger menu with styled-components",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farukbigez/styled-component-hamburgerjs.git"
+  },
+  "author": "farukbigez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/farukbigez/styled-component-hamburgerjs/issues"
+  },
+  "homepage": "https://github.com/farukbigez/styled-component-hamburgerjs#readme"
+}
