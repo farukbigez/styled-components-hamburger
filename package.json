@@ -2,8 +2,11 @@
   "name": "styled-component-hamburgerjs",
   "version": "1.0.0",
   "description": "simple hamburger menu with styled-components",
-  "main": "index.js",
-  "dependencies": {},
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "tsdx": "^0.13.2"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
