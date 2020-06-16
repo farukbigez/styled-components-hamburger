@@ -1,40 +1,19 @@
-import * as React from 'react'
-import './styles.scss'
+import React from 'react'
+import { Burger, Menu } from './components'
 
-const { useState, useEffect } = React
+const App: React.FC = () => {
+  const [open, setOpen] = React.useState(false)
+  const node = React.useRef(null)
 
-const Counter: React.FC<{
-  count: number
-  className: string
-}> = ({ count, className }) => (
-  <div className={`counter ${className}`}>
-    <p
-      key={count}
-      className={`counter__count ${className ? className + '__count' : ''}`}
-    >
-      {count}
-    </p>
-  </div>
-)
+  return (
+    <>
+      <div ref={node} >
+        <Burger open={open} setOpen={setOpen} />
+        <Menu open={open} />
+        </div>
+      </>
+  )
 
-export type ICounterProps = {
-  className?: string
-}
-
-const App: React.FC<ICounterProps> = ({ className = '' }) => {
-  const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (count > 99) return setCount(0)
-
-      setCount(count + 1)
-    }, 1000)
-
-    return () => clearInterval(interval)
-  }, [count, setCount])
-
-  return <Counter className={className} count={count} />
 }
 
 export default App

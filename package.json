@@ -1,21 +1,30 @@
 {
-  "name": "styled-component-hamburgerjs",
+  "name": "styled-components-hamburger",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/styled-components": "^5.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rollup -c -w",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "files": [
+    "dist"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -49,6 +58,7 @@
   },
   "author": "farukbigez",
   "license": "MIT",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bugs": {
     "url": "https://github.com/farukbigez/styled-component-hamburgerjs/issues"
   },
