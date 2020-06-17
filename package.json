@@ -58,7 +58,6 @@
   },
   "author": "farukbigez",
   "license": "MIT",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "bugs": {
     "url": "https://github.com/farukbigez/styled-component-hamburgerjs/issues"
   },
