@@ -1,10 +1,9 @@
 import React from 'react'
 import { StyledMenu } from './Menu.styled'
 
-export interface Props {
+interface Props {
   open: boolean
 }
-
 
 const Menu: React.FC<Props> = ({ open }) => {
   return (
