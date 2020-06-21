@@ -38,5 +38,7 @@
     "dist",
     "example",
     "rollup.config.js",
-    "components"  ]
+    "components",
+    
+    ]
 }
