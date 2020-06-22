@@ -1,7 +1,7 @@
 {
   "name": "styled-components-hamburger",
-  "version": "1.0.0",
-  "private": true,
+  "version": "0.1.0",
+  "private": false,
   "dependencies": {
     "@types/babel__core": "^7.1.9",
     "@types/jest": "24.0.18",
@@ -39,7 +39,7 @@
     "@types/styled-components": "^4.1.19"
   },
   "description": "styled-components hamburger menu",
-  "main": "rollup.config.js",
+  "main": "index.tsx",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/farukbigez/styled-components-hamburger.git"
