@@ -1,28 +1,25 @@
 {
   "name": "styled-components-hamburger",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "dependencies": {
-    "@testing-library/react": "^10.3.0",
     "@types/babel__core": "^7.1.9",
-    "@types/styled-components": "^5.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "styled-components": "^5.1.1"
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.4",
+    "@types/react": "16.9.2",
+    "@types/react-dom": "16.9.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1",
+    "styled-components": "^5.1.1",
+    "typescript": "3.6.3"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rollup -c -w",
-    "test": "jest --watch"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
-  },
-  "files": [
-    "dist"
-  ],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -38,27 +35,19 @@
       "last 1 safari version"
     ]
   },
-  "description": "initial commit",
-  "main": "index.tsx",
   "devDependencies": {
-    "@types/babel__generator": "^7.6.1",
-    "@types/react": "^16.9.36",
-    "@types/react-dom": "^16.9.8",
-    "babel-core": "^6.26.3",
-    "babel-runtime": "^6.26.0",
-    "rollup": "^2.16.1",
-    "rollup-plugin-sass": "^1.2.2",
-    "rollup-plugin-typescript2": "^0.27.1",
-    "typescript": "^3.9.5"
+    "@types/styled-components": "^4.1.19"
   },
+  "description": "styled-components hamburger menu",
+  "main": "rollup.config.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/farukbigez/styled-component-hamburgerjs.git"
+    "url": "git+https://github.com/farukbigez/styled-components-hamburger.git"
   },
   "author": "farukbigez",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/farukbigez/styled-component-hamburgerjs/issues"
+    "url": "https://github.com/farukbigez/styled-components-hamburger/issues"
   },
-  "homepage": "https://github.com/farukbigez/styled-component-hamburgerjs#readme"
+  "homepage": "https://github.com/farukbigez/styled-components-hamburger#readme"
 }

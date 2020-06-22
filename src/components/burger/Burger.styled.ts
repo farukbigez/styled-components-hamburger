@@ -5,30 +5,45 @@ interface Props {
 }
 
 export const StyledBurger = styled.button<Props>`
- list-style: none;
+  position: absolute;
+  top: 5%;
+  left: 2rem;
   display: flex;
-  flex-flow: row nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
 
-  li {
-    padding: 18px 10px;
+  &:focus {
+    outline: none;
   }
 
-  @media (max-width: 768px) {
-    flex-flow: column nowrap;
-    background-color: #090909;
-    position: fixed;
-    transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100%;
-    padding-top: 3.5rem;
-    transition: transform 0.3s ease-in-out;
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background: ${({ theme, open }) =>
+      open ? theme.primaryDark : theme.primaryLight};
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
 
-    li {
-      color: #fff;
-      font-size: 24px;
-      text-align: center;
+    :first-child {
+      transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
+    }
+
+    :nth-child(2) {
+      opacity: ${({ open }) => (open ? '0' : '1')};
+      transform: ${({ open }) => (open ? 'translateX(20px)' : 'translateX(0)')};
+    }
+
+    :nth-child(3) {
+      transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
     }
   }
-`;
+`
