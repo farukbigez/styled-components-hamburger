@@ -6,18 +6,8 @@
       "dom.iterable",
       "esnext"
     ],
-    "sourceMap": false,
     "allowJs": true,
     "skipLibCheck": true,
-    "outDir": "dist",
-    "declaration": true,
-    "noImplicitReturns": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -29,6 +19,7 @@
     "noEmit": true,
     "jsx": "react"
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "rollup.config.js"]
+  "include": [
+    "src"
+  ]
 }

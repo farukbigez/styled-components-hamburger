@@ -5,13 +5,20 @@ interface Props {
 }
 
 export const StyledBurger = styled.button<Props>`
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   position: fixed;
   top: 15px;
   right: 20px;
   z-index: 20;
   display: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+
+  &:focus {
+    outline: none;
+  }
 
   @media (max-width: 768px) {
     display: flex;
@@ -20,12 +27,13 @@ export const StyledBurger = styled.button<Props>`
   }
 
   div {
-    width: 2rem;
+    width: 1.5rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? '#ccc' : '#333'};
+    background-color: ${({ open }) => open ? '#030303' : '#030303'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
+    position: relative;
 
     &:nth-child(1) {
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
